@@ -11,6 +11,15 @@ const ProductList = ({ onAddToCart, catFilter }) => {
   
   const filteredProducts = catFilter === 'all' ? sampleProducts : sampleProducts.filter((product) => product.category === catFilter);
 
+  if (!filteredProducts || filteredProducts.length === 0) {
+    return (
+    <div>
+      <h2>Available Products</h2>
+      <p>No products available</p>
+    </div>
+    )
+  }
+  
   return (
     <div>
       <h2>Available Products</h2>

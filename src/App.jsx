@@ -5,7 +5,7 @@ import Cart from './components/Cart'
 
 const App = () => {
 
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   const [cart, setCart] = useState([]);
 
